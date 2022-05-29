@@ -33,7 +33,7 @@ function App() {
   function submit(e){
     e.preventDefault();
       // const response = axios.post(url,data,{headers:{"Content-Type" : "application/json"}});
-      axios.post("http://127.0.0.1:5000/predict", {
+      axios.post("https://flask-api-for-cars.herokuapp.com//predict", {
           disp:parseFloat(data.disp),
           mileage:parseFloat(data.mileage),
           cylin:parseFloat(data.cylin),
